@@ -1,0 +1,83 @@
+# Python
+web-portal/__pycache__/
+web-portal/*.py[cod]
+web-portal/*$py.class
+web-portal/*.so
+web-portal/*.egg-info/
+web-portal/dist/
+web-portal/build/
+web-portal/.eggs/
+web-portal/*.egg
+
+# Virtual environments
+web-portal/venv/
+web-portal/env/
+web-portal/.env/
+
+# ML artifacts
+web-portal/*.pth
+web-portal/*.pt
+web-portal/*.onnx
+web-portal/*.ckpt
+web-portal/checkpoints/
+web-portal/outputs/
+web-portal/runs/
+web-portal/wandb/
+
+# Jupyter
+web-portal/.ipynb_checkpoints/
+
+# Node
+web-portal/node_modules/
+web-portal/.next/
+web-portal/out/
+web-portal/.vercel
+
+# IDE
+web-portal/.vscode/
+web-portal/.idea/
+web-portal/*.swp
+web-portal/*.swo
+
+# OS
+web-portal/.DS_Store
+web-portal/Thumbs.db
+
+# Environment
+web-portal/.env
+web-portal/.env.local
+web-portal/.env.*.local
+
+# Logs
+web-portal/*.log
+web-portal/npm-debug.log*
+
+# Models directory (large files)
+web-portal/web-portal/public/models/*.onnx
+
+# Data
+web-portal/ml-pipeline/data/
+
+# dependencies
+web-portal/node_modules
+web-portal/.pnp
+web-portal/.pnp.*
+web-portal/.yarn/*
+web-portal/!.yarn/patches
+web-portal/!.yarn/plugins
+web-portal/!.yarn/releases
+web-portal/!.yarn/versions
+
+# testing
+web-portal/coverage
+
+# debug
+web-portal/npm-debug.log*
+web-portal/yarn-debug.log*
+web-portal/yarn-error.log*
+web-portal/.pnpm-debug.log*
+
+.env*
+
+dataset/
+

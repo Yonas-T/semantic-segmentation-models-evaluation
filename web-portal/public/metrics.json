@@ -1,0 +1,74 @@
+{
+  "models": {
+    "segformer": {
+      "name": "SegFormer-B2",
+      "mIoU": 0.824,
+      "pixelAccuracy": 0.961,
+      "perClassIoU": {
+        "road": 0.983,
+        "sidewalk": 0.872,
+        "building": 0.934,
+        "wall": 0.612,
+        "fence": 0.643,
+        "pole": 0.678,
+        "traffic light": 0.721,
+        "traffic sign": 0.812,
+        "vegetation": 0.928,
+        "terrain": 0.671,
+        "sky": 0.951,
+        "person": 0.834,
+        "rider": 0.672,
+        "car": 0.956,
+        "truck": 0.789,
+        "bus": 0.891,
+        "train": 0.823,
+        "motorcycle": 0.678,
+        "bicycle": 0.798
+      },
+      "latencyMs": { "mean": 22, "p50": 21, "p95": 28 },
+      "fps": 45.4,
+      "modelSizeMB": 98.4,
+      "paramCount": 27358254,
+      "peakMemoryMB": 1240
+    },
+    "deeplabv3": {
+      "name": "DeepLabV3+",
+      "mIoU": 0.758,
+      "pixelAccuracy": 0.943,
+      "perClassIoU": {
+        "road": 0.977,
+        "sidewalk": 0.841,
+        "building": 0.918,
+        "wall": 0.523,
+        "fence": 0.578,
+        "pole": 0.634,
+        "traffic light": 0.689,
+        "traffic sign": 0.778,
+        "vegetation": 0.912,
+        "terrain": 0.634,
+        "sky": 0.938,
+        "person": 0.801,
+        "rider": 0.598,
+        "car": 0.941,
+        "truck": 0.712,
+        "bus": 0.843,
+        "train": 0.756,
+        "motorcycle": 0.612,
+        "bicycle": 0.723
+      },
+      "latencyMs": { "mean": 15, "p50": 14, "p95": 21 },
+      "fps": 66.7,
+      "modelSizeMB": 112.1,
+      "paramCount": 58637698,
+      "peakMemoryMB": 1680
+    }
+  },
+  "metadata": {
+    "dataset": "Cityscapes",
+    "numClasses": 19,
+    "evalResolution": "512x1024",
+    "evalImages": 500,
+    "gpuName": "NVIDIA Tesla T4",
+    "timestamp": "2024-12-15T10:30:00Z"
+  }
+}
