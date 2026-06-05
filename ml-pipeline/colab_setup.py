@@ -270,7 +270,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--password",
         type=str,
-        default="Neba 123456", #os.environ.get("CITYSCAPES_PASSWORD", ""),
+        default="Neba 4321", #os.environ.get("CITYSCAPES_PASSWORD", ""),
         help="Cityscapes account password (or set CITYSCAPES_PASSWORD env var).",
     )
     parser.add_argument(
