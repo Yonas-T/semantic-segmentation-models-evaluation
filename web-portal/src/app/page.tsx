@@ -156,16 +156,16 @@ export default function DashboardPage() {
         )}
 
         {/* Metrics section */}
-        <section id="metrics">
+        {/* <section id="metrics">
           <MetricsTable metrics={metrics} />
-        </section>
+        </section> */}
       </main>
 
       {/* ─── Footer ───────────────────────────────────────── */}
       <footer className="border-t border-white/5 py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/30">
           <p>
-            MSc Deep Learning — Semantic Segmentation Benchmark © {new Date().getFullYear()}
+            Semantic Segmentation Benchmark
           </p>
           <div className="flex items-center gap-4">
             <a

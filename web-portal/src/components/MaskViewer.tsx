@@ -28,9 +28,9 @@ export default function MaskViewer({
   const [showLegend, setShowLegend] = useState(false);
 
   const panels = [
-    { title: 'Original Image', src: originalImage, latency: null, model: null },
     { title: 'SegFormer-B2', src: segformerMask, latency: segformerLatency, model: 'segformer' },
     { title: 'DeepLabV3+', src: deeplabMask, latency: deeplabLatency, model: 'deeplabv3' },
+    { title: 'Original Image', src: originalImage, latency: null, model: null },
   ];
 
   if (!originalImage && !segformerMask && !deeplabMask) {
@@ -136,7 +136,7 @@ export default function MaskViewer({
       )}
 
       {/* Panels */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {panels.map((panel, idx) => (
           <motion.div
             key={panel.title}
