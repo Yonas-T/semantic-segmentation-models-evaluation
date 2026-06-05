@@ -68,12 +68,15 @@ export async function POST(request: NextRequest) {
     // Check if models exist
     const models = modelsExist();
     if (!models.segformer && !models.deeplabv3) {
+      console.log('model does not exist')
       return NextResponse.json(getMockResponse(), { status: 200 });
     }
 
     // Read image buffer
     const arrayBuffer = await imageFile.arrayBuffer();
     const imageBuffer = Buffer.from(arrayBuffer);
+
+    console.log({imageBuffer})
 
     // Run inference on both models in parallel
     const [segformerResult, deeplabResult] = await Promise.all([

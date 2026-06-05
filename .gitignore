@@ -81,3 +81,4 @@ web-portal/.pnpm-debug.log*
 
 dataset/
 
+web-portal/public/models/

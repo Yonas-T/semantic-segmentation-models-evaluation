@@ -284,7 +284,7 @@ def _print_comparison_table(results: Dict[str, Dict[str, Any]]) -> None:
             if key is not None:
                 val = info.get(key, "N/A")
                 if fmt and isinstance(val, (int, float)):
-                    print(f"│ {val:{fmt}:<20}", end="")
+                    print(f"│ {format(val, fmt):<20}", end="")
                 else:
                     print(f"│ {val!s:<20}", end="")
             elif "Latency mean" in label:
