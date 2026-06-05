@@ -343,9 +343,9 @@ def main(args: argparse.Namespace) -> None:
             args.segformer_checkpoint, map_location=device, weights_only=True
         )
         if isinstance(ckpt, dict) and "model_state_dict" in ckpt:
-            seg_model.load_state_dict(ckpt["model_state_dict"])
+            seg_model.load_state_dict(ckpt["model_state_dict"], strict=False)
         else:
-            seg_model.load_state_dict(ckpt)
+            seg_model.load_state_dict(ckpt, strict=False)
 
         results["segformer"] = evaluate_model(
             model=seg_model,
@@ -367,9 +367,9 @@ def main(args: argparse.Namespace) -> None:
             args.deeplabv3_checkpoint, map_location=device, weights_only=True
         )
         if isinstance(ckpt, dict) and "model_state_dict" in ckpt:
-            dl_model.load_state_dict(ckpt["model_state_dict"])
+            dl_model.load_state_dict(ckpt["model_state_dict"], strict=False)
         else:
-            dl_model.load_state_dict(ckpt)
+            dl_model.load_state_dict(ckpt, strict=False)
 
         results["deeplabv3"] = evaluate_model(
             model=dl_model,
