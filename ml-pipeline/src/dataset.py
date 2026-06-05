@@ -331,7 +331,7 @@ class CityscapesSegDataset(Dataset):
         # Apply augmentation (albumentations works on numpy arrays)
         transformed = self.transform(image=image, mask=label)
         pixel_values: torch.Tensor = transformed["image"]  # [3, H, W] float32
-        labels: torch.Tensor = torch.transformed["mask"].long()  # [H, W]
+        labels:  torch.Tensor = transformed["mask"].long()  # [H, W]
 
         return {"pixel_values": pixel_values, "labels": labels}
 
