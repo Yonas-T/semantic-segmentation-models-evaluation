@@ -264,7 +264,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--username",
         type=str,
-        default="yonaztad@gmail.com", # os.environ.get("CITYSCAPES_USERNAME", ""),
+        default="yonas.gsr-6310-18@aau.edu.et", # os.environ.get("CITYSCAPES_USERNAME", ""),
         help= "Cityscapes account email (or set CITYSCAPES_USERNAME env var).",
     )
     parser.add_argument(
