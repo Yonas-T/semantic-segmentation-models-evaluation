@@ -264,13 +264,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--username",
         type=str,
-        default="yonas.gsr-6310-18@aau.edu.et", # os.environ.get("CITYSCAPES_USERNAME", ""),
+        default="nebiyu.gsr-2407-18@aau.edu.et", # os.environ.get("CITYSCAPES_USERNAME", ""),
         help= "Cityscapes account email (or set CITYSCAPES_USERNAME env var).",
     )
     parser.add_argument(
         "--password",
         type=str,
-        default="Sanoydat#1", #os.environ.get("CITYSCAPES_PASSWORD", ""),
+        default="Neba 123456", #os.environ.get("CITYSCAPES_PASSWORD", ""),
         help="Cityscapes account password (or set CITYSCAPES_PASSWORD env var).",
     )
     parser.add_argument(
